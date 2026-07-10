@@ -171,8 +171,7 @@ A diferencia de un despliegue anterior en modo evaluación (donde IPS aparecía 
 ## 📄 Documentación completa
 
 El informe técnico detallado con todas las capturas embebidas está disponible en:
-- [`Practica_FortiGate_Documentacion.docx`](./Practica_FortiGate_Documentacion.docx)
-- [`Practica_FortiGate_Documentacion.md`](./Practica_FortiGate_Documentacion.md)
+- [`Practica_FortiGate_Documentacion.PDF`](./EnmanuelFeliz_20251402_DOCUMENTACIÓN_P4.pdf)
 
 ## 📁 Estructura del repositorio
 
