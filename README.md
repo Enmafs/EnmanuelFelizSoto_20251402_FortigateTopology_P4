@@ -205,5 +205,5 @@ NetSec-FortiGate-Practica/
 | Recurso | Enlace |
 |---------|--------|
 | Repositorio | [EnmanuelFelizSoto_20251402_FortigateTopology_P4](https://github.com/Enmafs/EnmanuelFelizSoto_20251402_FortigateTopology_P4) |
-| Repositorio padre (NetSec) | [Enmafs/NetSec](https://github.com/Enmafs/NetSe) |
+| Repositorio padre (NetSec) | [Enmafs/NetSec](https://github.com/Enmafs/NetSec) |
 | Video demostrativo | 🎬 [Aquí](https://youtu.be/EQpuW7qU0f4) |
