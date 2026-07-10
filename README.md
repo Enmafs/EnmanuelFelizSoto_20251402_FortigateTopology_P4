@@ -1,11 +1,21 @@
 # NetSec — Práctica FortiGate: Topología de Seguridad Perimetral
 
-**Estudiante:** Enmanuel Fernandez — Matrícula 20251402  
+**Estudiante:** Enmanuel Feliz Soto — Matrícula 20251402  
 **Curso:** Seguridad en Redes — Sección 5 (Lunes) — ITLA  
 **Profesor:** Jonathan Esteban Rondón Corniel  
 **Plataforma:** FortiGate-VM64-KVM v7.6.7
 
 ---
+
+## 🎯 Objetivo de la red
+
+Diseñar e implementar, íntegramente desde la GUI de FortiGate, una topología de seguridad perimetral que separe el tráfico de una LAN de usuarios y una LAN de servidores, controlando estrictamente qué protocolos y aplicaciones pueden circular entre ellas y hacia Internet. La red debe garantizar:
+
+- Segmentación de red mediante subredes independientes para usuarios (/25) y servidores (/28).
+- Salida a Internet controlada mediante NAT y una ruta por defecto única.
+- Asignación dinámica de direcciones IP a los usuarios mediante DHCP.
+- Control de acceso estricto entre segmentos, permitiendo únicamente tráfico HTTP desde la LAN de usuarios hacia la LAN de servidores.
+- Protección activa contra amenazas comunes: bloqueo de categorías de riesgo (redes sociales, llamadas de VoIP de WhatsApp, dominios académicos no autorizados), detección de escaneo de red mediante IPS, y protección específica del servidor web mediante WAF.
 
 ## 📌 Descripción
 
@@ -37,6 +47,8 @@ Este repositorio documenta la implementación de una topología de red segura en
 | port1 | WAN | Salida a Internet | 10.0.0.202 | /24 |
 | port2 | LAN-USERS | LAN de usuarios | 14.2.10.1 | /25 |
 | port3 | LAN-SERVERS | LAN de servidores | 14.2.20.1 | /28 |
+
+> **Nota sobre VLANs:** esta topología no utiliza VLANs, ya que la segmentación entre la LAN de usuarios y la LAN de servidores se implementó mediante interfaces físicas independientes (port2 y port3) en el FortiGate, cada una con su propia subred. Este diseño cumple el mismo objetivo de aislamiento de tráfico que ofrecería una segmentación por VLANs, sin requerir un switch con soporte 802.1Q adicional en el entorno de laboratorio.
 
 <!-- CAP-00: Diagrama de topología general (opcional, si se genera en draw.io / Visio) -->
 > <img width="1461" height="819" alt="image" src="https://github.com/user-attachments/assets/8930112e-d2cd-44ca-87ae-12ee8bb83f2e" />
@@ -171,15 +183,14 @@ A diferencia de un despliegue anterior en modo evaluación (donde IPS aparecía 
 ## 📄 Documentación completa
 
 El informe técnico detallado con todas las capturas embebidas está disponible en:
-- [`Practica_FortiGate_Documentacion.PDF`](./EnmanuelFeliz_20251402_DOCUMENTACIÓN_P4.pdf)
+- [`EnmanuelFeliz_20251402_DOCUMENTACIÓN_P4.pdf`](./EnmanuelFeliz_20251402_DOCUMENTACIÓN_P4.pdf)
 
 ## 📁 Estructura del repositorio
 
 ```
 NetSec-FortiGate-Practica/
 ├── README.md
-├── Practica_FortiGate_Documentacion.docx
-├── Practica_FortiGate_Documentacion.md
+├── EnmanuelFeliz_20251402_DOCUMENTACIÓN_P4.pdf
 └── images/
     ├── 01_interfaces.png
     ├── 02_static_routes.png
