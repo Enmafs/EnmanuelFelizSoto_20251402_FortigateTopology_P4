@@ -200,10 +200,10 @@ NetSec-FortiGate-Practica/
     └── 17_ips_log_sqli.png
 ```
 
-## 🔗 Enlaces relacionados
+## 📁 Recursos
 
-- Repositorio padre del curso: [github.com/Enmafs/NetSec](https://github.com/Enmafs/NetSec)
-
----
-
-*Última actualización: práctica de topología FortiGate — Seguridad en Redes, ITLA.*
+| Recurso | Enlace |
+|---------|--------|
+| Repositorio | [EnmanuelFelizSoto_20251402_FortigateTopology_P4](https://github.com/Enmafs/EnmanuelFelizSoto_20251402_FortigateTopology_P4) |
+| Repositorio padre (NetSec) | [Enmafs/NetSec](https://github.com/Enmafs/NetSe) |
+| Video demostrativo | 🎬 [Aquí](https://youtu.be/EQpuW7qU0f4) |
